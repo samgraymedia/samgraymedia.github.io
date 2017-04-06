@@ -9,7 +9,7 @@
 # Set the English locale for the `date` command.
 export LC_TIME=en_US.UTF-8
 
-# GitHub username.
+# GitHub username
 USERNAME=samgraymedia
 # Name of the branch containing the Hugo source files.
 SOURCE=sources
