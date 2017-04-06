@@ -23,6 +23,10 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 [params]
     description = "This is me. Im Sam"
 
+  [[params.navlinks]]
+  name = "Home"
+  url = ""
+
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.9.0"
     highlightjsLang = ["r", "yaml"]
