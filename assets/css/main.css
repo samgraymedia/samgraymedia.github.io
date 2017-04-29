@@ -641,6 +641,30 @@ hr {
         -ms-transform: translateY(0%);
             transform: translateY(0%); } }
 
+section.about {
+  background-image: url("http://placehold.it/100x100");
+  background-position: center bottom;
+  background-size: cover; }
+  section.about h2 {
+    color: #3f3f42;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: -108px;
+    margin-top: 0; }
+    @media (max-width: 640px) {
+      section.about h2 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px; } }
+  section.about .home-lead {
+    padding-bottom: 180px; }
+    @media (max-width: 640px) {
+      section.about .home-lead {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px; } }
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -705,3 +729,13 @@ hr {
   @media (max-width: 640px) {
     .col-50 {
       width: auto; } }
+
+.push-right {
+  margin-left: 330px; }
+  @media (max-width: 640px) {
+    .push-right {
+      margin-left: 10px; } }
+
+.home-lead {
+  font-size: 36px;
+  line-height: 1.1; }
