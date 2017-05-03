@@ -12,6 +12,7 @@
     flex-direction: row
     @media (max-width: 640px)
       display: block
+
   .col-parent-center
     justify-content: center
   .col-parent-space-around
@@ -46,3 +47,7 @@
 .home-lead
   font-size: 36px
   line-height: 1.1
+  &.outdented
+    text-indent: -0.7em
+    @media (max-width: 640px)
+      text-indent: 0

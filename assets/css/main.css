@@ -375,7 +375,7 @@ template {
 
 body {
   background-color: #ddd;
-  font-size: 14px;
+  font-size: 14.562px;
   line-height: 1.6;
   font-family: 'Fira Sans', sans-serif;
   color: #666;
@@ -426,11 +426,13 @@ input[type="button"] {
     outline: 0; }
 
 a {
-  color: #0074D9;
+  color: #c95454;
   text-decoration: none;
-  outline: 0; }
+  outline: 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
   a:hover, a:focus {
-    color: #40a6ff; }
+    color: #e1a2a2; }
 
 ::-moz-selection {
   background: #FFF498; }
@@ -500,10 +502,29 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+.home-cta {
+  background-color: #fff;
+  font-weight: 800;
+  width: 100%;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+  .home-cta:active {
+    background-color: #fff;
+    color: pink;
+    font-weight: 800;
+    width: 100%; }
+  .home-cta:hover {
+    background-color: pink;
+    color: #fff;
+    -webkit-box-shadow: 0px 4px 8px transparent;
+            box-shadow: 0px 4px 8px transparent; }
+
 .home-wrap header {
   width: 135px;
   padding: 30px 0;
-  background: white; }
+  background: #fff; }
   .home-wrap header .header-position {
     position: fixed;
     width: 135px;
@@ -590,7 +611,7 @@ hr {
   display: none;
   position: absolute;
   width: 100%;
-  background: white;
+  background: #fff;
   padding: 30px 0 20px;
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
@@ -642,9 +663,11 @@ hr {
             transform: translateY(0%); } }
 
 section.about {
-  background-image: url("http://placehold.it/100x100");
-  background-position: center bottom;
-  background-size: cover; }
+  position: relative;
+  background-color: #d54b4b; }
+  section.about .particles-js-canvas-el {
+    position: absolute;
+    top: 0; }
   section.about h2 {
     color: #3f3f42;
     font-size: 60px;
@@ -664,6 +687,10 @@ section.about {
         margin-left: auto;
         margin-right: auto;
         max-width: 300px; } }
+
+section.skills {
+  background-color: pink;
+  color: white; }
 
 .home-wrap {
   display: -webkit-box;
@@ -739,3 +766,8 @@ section.about {
 .home-lead {
   font-size: 36px;
   line-height: 1.1; }
+  .home-lead.outdented {
+    text-indent: -0.7em; }
+    @media (max-width: 640px) {
+      .home-lead.outdented {
+        text-indent: 0; } }
