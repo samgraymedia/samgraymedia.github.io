@@ -84,6 +84,45 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/css\/sass\/2-sections\/footer.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/sass\/2-sections\/footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/sass\/2-sections\/pods.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/sass\/2-sections\/pods.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/sass\/2-sections\/second_pods.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/sass\/2-sections\/second_pods.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/css\/sass\/2-sections\/top\/header.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -106,19 +145,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/sass\/2-sections\/top\/nav.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/css\/sass\/2-sections\/top\/pods.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/sass\/2-sections\/top\/pods.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -160,11 +186,35 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/pug\/includes\/footer.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/footer.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/pug\/includes\/head.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/pug\/includes\/head.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/pods.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/pods.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/second_pods.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/second_pods.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -181,14 +231,6 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/pug\/includes\/top\/nav.html",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/pug\/includes\/top\/pods.pug": {
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/pug\/includes\/top\/pods.html",
 		"oF": 0,
 		"oS": 0
 		},
