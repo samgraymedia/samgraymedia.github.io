@@ -1,0 +1,43 @@
+section.nav
+  height: 200px
+  border-bottom: 1px solid #43434f
+  position: relative
+
+  nav.catogories
+    position: absolute
+    bottom: 26px
+    left: 168px
+    ul
+      li
+        list-style: none
+        display: inline
+        margin-right: 40px
+        a
+          font-size: 28px
+          color: #fff
+          padding:
+            bottom: 24px
+          margin:
+            left: 41px
+          text-align: center
+          &:first-of-type
+            margin-left: 0
+          &.weights
+            border-bottom: 4px solid $weights
+          &.stamina
+            border-bottom: 4px solid $stamina
+          &.sport
+            border-bottom: 4px solid $sport
+  nav.main
+    position: absolute
+    bottom: 35px
+    right: 168px
+    ul
+      width: 350px
+      display: flex
+      justify-content: space-between
+      li
+        list-style: none
+        display: inline
+        a
+          color: #fff
