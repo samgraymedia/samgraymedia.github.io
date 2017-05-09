@@ -162,11 +162,59 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/img\/arrow.png": {
+		"ft": 32768,
+		"iS": 898,
+		"oA": 0,
+		"oAP": "\/img\/arrow.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/facebook.png": {
+		"ft": 32768,
+		"iS": 4248,
+		"oA": 0,
+		"oAP": "\/img\/facebook.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/footer-logo.png": {
 		"ft": 32768,
 		"iS": 870,
 		"oA": 0,
 		"oAP": "\/img\/footer-logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/gplus.png": {
+		"ft": 32768,
+		"iS": 16251,
+		"oA": 0,
+		"oAP": "\/img\/gplus.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/header-logo.png": {
+		"ft": 32768,
+		"iS": 2802,
+		"oA": 0,
+		"oAP": "\/img\/header-logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/search.png": {
+		"ft": 32768,
+		"iS": 8960,
+		"oA": 0,
+		"oAP": "\/img\/search.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/twitter.png": {
+		"ft": 32768,
+		"iS": 4861,
+		"oA": 0,
+		"oAP": "\/img\/twitter.png",
 		"oF": 0,
 		"opt": 0
 		},
