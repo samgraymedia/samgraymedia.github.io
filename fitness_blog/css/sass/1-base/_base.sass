@@ -47,10 +47,10 @@ a
   &:focus
     color: lighten(#0074D9, 20%)
 ::selection
-  background: #FFF498
+  background: lighten($primary, 50%)
 
 ::-moz-selection
-  background: #FFF498
+  background:  lighten($primary, 50%)
 
 img::selection
   background: transparent
@@ -112,3 +112,9 @@ hr
   clear: both
   margin: 10px 0 30px
   height: 0
+.wrap
+  min-width: 320px
+  max-width: 1111px
+  margin: 0 auto
+  height: 100%
+  position: relative

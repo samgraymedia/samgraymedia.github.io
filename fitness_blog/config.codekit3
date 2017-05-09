@@ -162,6 +162,14 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/img\/footer-logo.png": {
+		"ft": 32768,
+		"iS": 870,
+		"oA": 0,
+		"oAP": "\/img\/footer-logo.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,

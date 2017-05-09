@@ -1,3 +1,21 @@
 footer
-  height: 500px
   background: #d1d1d5
+  padding-top: 50px
+  padding-bottom: 250px
+  .logo
+    float: left
+  nav.footer
+    margin-left: 100px
+    p
+      margin-top: 20px
+    ul
+      list-style: none
+      li
+        display: inline
+        a
+          margin-right: 30px
+          color: $primary
+          text-decoration: underline
+          transition: all 0.1s ease-in-out
+          &:hover
+            color: lighten($primary, 50%)
