@@ -909,15 +909,116 @@ section.questions {
   padding: 15px 0; }
   section.questions ul {
     margin-left: 25px; }
-    section.questions ul li.question a {
-      color: #141423;
-      -webkit-transition: 0.1s all ease-in-out;
-      transition: 0.1s all ease-in-out;
-      font-size: 16px; }
-      section.questions ul li.question a:hover {
-        color: #8080b6; }
-    section.questions ul li.question p.answer {
-      margin-left: 10px;
-      display: none; }
-      section.questions ul li.question p.answer.open {
-        display: block; }
+    section.questions ul li.question {
+      margin-bottom: 20px; }
+      section.questions ul li.question a {
+        color: #141423;
+        -webkit-transition: 0.1s all ease-in-out;
+        transition: 0.1s all ease-in-out;
+        font-size: 16px; }
+        section.questions ul li.question a:hover {
+          color: #8080b6; }
+      section.questions ul li.question p.answer {
+        margin-left: 10px;
+        display: none; }
+        section.questions ul li.question p.answer.open {
+          display: block; }
+  section.questions .sideBar {
+    background-color: #fff;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+    padding: 20px; }
+    section.questions .sideBar form input {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      height: 30px;
+      border: 1px solid #141423;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #141423; }
+    section.questions .sideBar form textarea {
+      display: block;
+      min-height: 60px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: 1px solid #141423;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #141423; }
+    section.questions .sideBar form button {
+      background-color: #141423;
+      color: white;
+      width: 100%;
+      -webkit-transition: 0.3s all ease-in-out;
+      transition: 0.3s all ease-in-out; }
+      section.questions .sideBar form button:hover {
+        background: white;
+        color: #141423; }
+
+section.contact {
+  padding: 25px 0; }
+  section.contact .feed.active {
+    display: block; }
+  section.contact .feed.notActive {
+    display: none; }
+  section.contact iframe {
+    margin-top: 10px;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3); }
+  section.contact .contact-info .address address {
+    font-size: 16px; }
+  section.contact .sideBar {
+    background-color: #fff;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 10px; }
+    section.contact .sideBar .article {
+      box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+      padding: 10px 10px;
+      background-color: #c1c1db;
+      margin-bottom: 10px; }
+    section.contact .sideBar form input {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      height: 30px;
+      border: 1px solid #141423;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #141423; }
+    section.contact .sideBar form textarea {
+      display: block;
+      min-height: 60px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: 1px solid #141423;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #141423; }
+    section.contact .sideBar form button {
+      background-color: #141423;
+      color: white;
+      width: 100%;
+      -webkit-transition: 0.3s all ease-in-out;
+      transition: 0.3s all ease-in-out; }
+      section.contact .sideBar form button:hover {
+        background: white;
+        color: #141423; }
+  section.contact .sideBar.social {
+    padding: 0; }
+    section.contact .sideBar.social .col {
+      margin: 0; }
+    section.contact .sideBar.social .tabs .tab {
+      text-align: center;
+      background-color: #141423;
+      height: 100%;
+      z-index: 0;
+      width: 50%; }
+      section.contact .sideBar.social .tabs .tab h4 {
+        color: white; }
+      section.contact .sideBar.social .tabs .tab.active {
+        background-color: #393964;
+        box-shadow: 3px 0px 5px 0px rgba(255, 255, 255, 0.5);
+        z-index: 1; }
+        section.contact .sideBar.social .tabs .tab.active .feed {
+          display: block; }

@@ -22,6 +22,14 @@ $("body").click(function() {
   $('.search-popup').css('display', 'none');
 });
 
-$('.js-question').click(function(event) {
+$('.js-question').click(function() {
   $(this).next('p').toggleClass('open');
+});
+
+
+$('.tab').click(function() {
+  $('.tab').toggleClass('active');
+  $('.tab').toggleClass('notActive');
+  $('.feed').toggleClass('active');
+  $('.feed').toggleClass('notActive');
 });

@@ -1,0 +1,50 @@
+section.contact
+  .wrap
+    .row
+      .col.six
+        .contact-info
+          .row
+            .address.col.four
+              h4 Write to us:
+              address
+                | Redweb
+                br
+                | 35 Holdenhurst Rd
+                br
+                | Bournemouth
+                br
+                | BH8 8EJ
+            .phone.col.four
+              h4 Phone Us:
+              a(href="tel:01202779944") 01202 779944
+            .email.col.four
+              h4 Email:
+              a(href="mailto:samgray@redweb.com") samgray@redweb.com
+          .row
+            .col.twelve
+              iframe(src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10103.293233886743!2d-1.865438!3d50.7232171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa890fb01ff631345!2sRedweb!5e0!3m2!1sen!2suk!4v1494424858049', width='100%', height='650px', frameborder='0', style='border:0', allowfullscreen='')    
+      .col.six
+        .sideBar
+          h4 Quick Form
+          form(action="email" method="method")
+            input(type="email" placeholder="enter your email")
+            textarea(placeholder="placeholder")
+            button(type="submit", ) Send
+        .sideBar.social
+          .tabs.row
+            a
+              .col.six.tab.facebook.active
+                h4 Facebook
+            a
+              .col.twelve.tab.twitter.notActive
+                h4 Twitter
+            .row
+              .feed.col.twelve.active
+                .fb-page(data-href='https://www.facebook.com/RedwebUK/', data-tabs='timeline', data-width='560px', data-height='500px', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
+                blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/SalonEighteenWales/')
+                a(href='https://www.facebook.com/SalonEighteenWales/') Redweb
+              .feed.col.twelve.notActive
+                a.twitter-timeline(href='https://twitter.com/Redweb' data-height="500") Tweets by Redweb
+                script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
+
+            

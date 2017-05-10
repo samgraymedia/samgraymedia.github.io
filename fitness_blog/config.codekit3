@@ -27,6 +27,12 @@
 		"oAP": "\/blog.html",
 		"oF": 0
 		},
+	"\/contact.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/contact.html",
+		"oF": 0
+		},
 	"\/css\/main.css": {
 		"aP": 0,
 		"bl": 0,
@@ -150,6 +156,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/sass\/2-sections\/blog\/title.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/sass\/2-sections\/contact\/main.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/sass\/2-sections\/contact\/main.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -361,6 +380,14 @@
 		"oF": 2,
 		"oS": 0
 		},
+	"\/pug\/contact.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/contact.html",
+		"oF": 2,
+		"oS": 0
+		},
 	"\/pug\/faq.pug": {
 		"cOD": 1,
 		"ft": 512,
@@ -414,6 +441,22 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/pug\/includes\/blog\/title.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/contact\/main.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/contact\/main.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/contact\/title.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/contact\/title.html",
 		"oF": 0,
 		"oS": 0
 		},
