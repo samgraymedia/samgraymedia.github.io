@@ -376,7 +376,8 @@ template {
 
 html, body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
 
 body {
   background-color: #e7e7e9;
@@ -745,13 +746,15 @@ footer {
             color: #8080b6; }
 
 .pods {
-  min-height: 300px;
-  border-bottom: 1px solid #fff;
+  min-height: 200px;
   padding-top: 50px;
   padding-bottom: 100px;
-  clear: both; }
+  clear: both;
+  position: relative; }
   .pods .row {
-    margin-top: 150px; }
+    position: absolute;
+    bottom: -430px;
+    padding-bottom: 30px; }
   .pods .pod {
     background-color: #fff;
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3); }
@@ -797,8 +800,10 @@ footer {
 
 section.second_pods {
   min-height: 500px;
-  padding-top: 40px;
-  width: 100%; }
+  margin-top: 150px;
+  width: 100%;
+  padding-top: 50px;
+  border-top: 1px solid #fff; }
   section.second_pods .pod {
     background: #fff;
     min-height: 50px;
