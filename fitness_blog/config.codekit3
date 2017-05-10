@@ -9,6 +9,24 @@
 	],
 "creatorBuild": "25444",
 "files": {
+	"\/about.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/about.html",
+		"oF": 0
+		},
+	"\/articles.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/articles.html",
+		"oF": 0
+		},
+	"\/blog.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/blog.html",
+		"oF": 0
+		},
 	"\/css\/main.css": {
 		"aP": 0,
 		"bl": 0,
@@ -84,7 +102,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/sass\/2-sections\/footer.sass": {
+	"\/css\/sass\/2-sections\/about\/about.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -92,12 +110,12 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/sass\/2-sections\/footer.css",
+		"oAP": "\/css\/sass\/2-sections\/about\/about.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/sass\/2-sections\/pods.sass": {
+	"\/css\/sass\/2-sections\/articles\/list.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -105,12 +123,12 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/sass\/2-sections\/pods.css",
+		"oAP": "\/css\/sass\/2-sections\/articles\/list.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/sass\/2-sections\/second_pods.sass": {
+	"\/css\/sass\/2-sections\/blog\/content.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -118,12 +136,12 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/sass\/2-sections\/second_pods.css",
+		"oAP": "\/css\/sass\/2-sections\/blog\/content.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/sass\/2-sections\/top\/header.sass": {
+	"\/css\/sass\/2-sections\/blog\/title.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -131,12 +149,12 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/sass\/2-sections\/top\/header.css",
+		"oAP": "\/css\/sass\/2-sections\/blog\/title.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/css\/sass\/2-sections\/top\/nav.sass": {
+	"\/css\/sass\/2-sections\/faq\/questions.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -144,7 +162,72 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/sass\/2-sections\/top\/nav.css",
+		"oAP": "\/css\/sass\/2-sections\/faq\/questions.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/sass\/2-sections\/home\/pods.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/sass\/2-sections\/home\/pods.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/sass\/2-sections\/home\/second_pods.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/sass\/2-sections\/home\/second_pods.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/sass\/2-sections\/shared\/footer.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/sass\/2-sections\/shared\/footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/sass\/2-sections\/shared\/header.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/sass\/2-sections\/shared\/header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/css\/sass\/2-sections\/shared\/nav.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/sass\/2-sections\/shared\/nav.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -161,6 +244,18 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/faq.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/faq.html",
+		"oF": 0
+		},
+	"\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/favicon.ico",
+		"oF": 0
 		},
 	"\/img\/arrow.png": {
 		"ft": 32768,
@@ -242,51 +337,147 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/pug\/includes\/footer.pug": {
+	"\/pug\/about.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/about.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"\/pug\/articles.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/articles.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"\/pug\/blog.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/blog.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"\/pug\/faq.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/faq.html",
+		"oF": 2,
+		"oS": 0
+		},
+	"\/pug\/includes\/about\/about.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/pug\/includes\/footer.html",
+		"oAP": "\/pug\/includes\/about\/about.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/pug\/includes\/head.pug": {
+	"\/pug\/includes\/about\/title.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/pug\/includes\/head.html",
+		"oAP": "\/pug\/includes\/about\/title.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/pug\/includes\/pods.pug": {
+	"\/pug\/includes\/articles\/list.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/pug\/includes\/pods.html",
+		"oAP": "\/pug\/includes\/articles\/list.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/pug\/includes\/second_pods.pug": {
+	"\/pug\/includes\/articles\/title.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/pug\/includes\/second_pods.html",
+		"oAP": "\/pug\/includes\/articles\/title.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/pug\/includes\/top\/header.pug": {
+	"\/pug\/includes\/blog\/content.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/pug\/includes\/top\/header.html",
+		"oAP": "\/pug\/includes\/blog\/content.html",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/pug\/includes\/top\/nav.pug": {
+	"\/pug\/includes\/blog\/title.pug": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
-		"oAP": "\/pug\/includes\/top\/nav.html",
+		"oAP": "\/pug\/includes\/blog\/title.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/faq\/questions.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/faq\/questions.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/faq\/title.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/faq\/title.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/home\/pods.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/home\/pods.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/home\/second_pods.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/home\/second_pods.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/shared\/footer.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/shared\/footer.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/shared\/head.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/shared\/head.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/shared\/header.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/shared\/header.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/pug\/includes\/shared\/nav.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/pug\/includes\/shared\/nav.html",
 		"oF": 0,
 		"oS": 0
 		},

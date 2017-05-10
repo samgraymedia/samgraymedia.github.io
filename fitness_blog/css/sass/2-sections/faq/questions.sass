@@ -1,0 +1,16 @@
+section.questions
+  padding: 15px 0
+  ul
+    margin-left: 25px
+    li.question
+      a
+        color: $primary
+        transition: 0.1s all ease-in-out
+        font-size: 16px
+        &:hover
+          color: lighten($primary, 50%)
+      p.answer
+        margin-left: 10px
+        display: none
+        &.open
+          display: block

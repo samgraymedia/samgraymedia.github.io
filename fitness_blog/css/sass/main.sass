@@ -10,12 +10,23 @@
 .sport-BG
   background-color: $sport
 #top
-  height: 620px
+  min-height: 520px
   width: 100%
   background:
     color: $primary
-@import "2-sections/top/header.sass"
-@import "2-sections/top/nav.sass"
-@import "2-sections/pods.sass"
-@import "2-sections/second_pods.sass"
-@import "2-sections/footer.sass"
+//SHARED
+@import "2-sections/shared/header.sass"
+@import "2-sections/shared/nav.sass"
+@import "2-sections/shared/footer.sass"
+//HOME
+@import "2-sections/home/pods.sass"
+@import "2-sections/home/second_pods.sass"
+//BLOG
+@import "2-sections/blog/title.sass"
+@import "2-sections/blog/content.sass"
+// Article list
+@import "2-sections/articles/list.sass"
+//about
+@import "2-sections/about/about.sass"
+//faq
+@import "2-sections/faq/questions.sass"

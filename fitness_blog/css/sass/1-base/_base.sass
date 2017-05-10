@@ -1,4 +1,8 @@
+
 *
+  margin: 0
+  padding: 0
+html,body
   margin: 0
   padding: 0
 body
@@ -65,7 +69,7 @@ body
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6
-  color: #222
+  color: $primary
   font-weight: bold
 
 .gigantic
@@ -99,6 +103,7 @@ h1, h2, h3, h4, h5, h6
 
 p
   margin: 0 0 20px 0
+  color: #606060
 
 em
   font-style: italic
@@ -119,13 +124,13 @@ hr
   height: 100%
   position: relative
   padding: 0 20px
-.filter
-  position: absolute;
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-  background: rgba(0,0,0,0.5)
+// .filter
+//   position: absolute;
+//   top: 0
+//   right: 0
+//   bottom: 0
+//   left: 0
+//   background: rgba(0,0,0,0.5)
 .search-popup
   position: absolute
   width: 1100px
@@ -155,3 +160,5 @@ hr
       repeat: no-repeat
       position: center
       color: #782b90
+section,header,footer
+  clear: both
