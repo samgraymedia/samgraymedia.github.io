@@ -649,6 +649,9 @@ header {
         background-position: center; }
       header .right .social .follow {
         height: 40px;
+        border-radius: 0;
+        color: #fff;
+        border: none;
         width: 150px;
         background: #6945a0;
         text-align: center;
@@ -664,6 +667,7 @@ header {
       border: 1px solid #43434f;
       width: 38px;
       height: 38px;
+      cursor: pointer;
       background-image: url(../img/search.png);
       background-size: 25px;
       background-repeat: no-repeat;
