@@ -967,7 +967,8 @@ section.questions {
 section.contact {
   padding: 25px 0; }
   section.contact .feed.active {
-    display: block; }
+    display: block;
+    height: 0; }
   section.contact .feed.notActive {
     display: none; }
   section.contact iframe {

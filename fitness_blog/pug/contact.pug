@@ -1,31 +1,27 @@
-doctype
-html(lang='en')
-  include includes/shared/head.pug
+include includes/shared/head.pug
+  #fb-root
+  script.
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=1662637840674180";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  .wrap
+    .search-popup
+      input(type="text", placeholder="Your search...")
+      button(type="submit")
+  .main
+    section#top
+      include includes/shared/header.pug
+      include includes/shared/nav.pug
+      include includes/contact/title.pug
+    include includes/contact/main.pug
+    include includes/shared/footer.pug
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+  script(src='js/jquery.matchHeight-min.js')
+  script(src='js/script.js')
 
-  body
-    #fb-root
-    script.
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=1662637840674180";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    .wrap
-      .search-popup
-        input(type="text", placeholder="Your search...")
-        button(type="submit")
-    .main
-      section#top
-        include includes/shared/header.pug
-        include includes/shared/nav.pug
-        include includes/contact/title.pug
-      include includes/contact/main.pug
-      include includes/shared/footer.pug
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-    script(src='js/jquery.matchHeight-min.js')
-    script(src='js/script.js')
-  
-      
+    
         
