@@ -1,11 +1,13 @@
 body
-  background-color: white
-  font-size: 14px
+  background-color: $silver
+  font-size: golden-ratio(9px,  1);
   line-height: 1.6
   font-family: 'Fira Sans', sans-serif
   color: #666
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
+  margin: 0
+  padding: 0
 .button,
 button,
 input[type="submit"],
@@ -36,13 +38,14 @@ input[type="button"]
     border-color: #888
     outline: 0
 a
-  color: #0074D9
+  color: #c95454
   text-decoration: none
   outline: 0
+  transition: all 0.1s ease-in-out
 
   &:hover,
   &:focus
-    color: lighten(#0074D9, 20%)
+    color: lighten(#c95454, 20%)
 ::selection
   background: #FFF498
 

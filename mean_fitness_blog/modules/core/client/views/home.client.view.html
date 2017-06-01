@@ -1,12 +1,12 @@
 <section data-ng-controller="HomeController">
   <section class="list">
     <div class="page-header wrap">
-      <!-- <h1>Posts</h1> -->
+      <h1>Posts</h1>
     </div>
-    <div class="list-group wrap">
-      <div class="article" ng-repeat="post in vm.posts" ui-sref="posts.view({ postId: post._id })">
+    <div class="list-group wrap" data-ng-controller="PostsListController">
+      <div class="article" ng-repeat="post in posts" ui-sref="posts.view({ postId: post._id })">
         <a class="list-group-item">
-          <h2 class="list-group-item-heading" ng-bind="vm.post.title"></h2>
+          <h2 class="list-group-item-heading" ng-bind="post.title"></h2>
           <p>{{post.body | limitTo: 200}}</p>
           <small class="list-group-item-text">
             Posted on

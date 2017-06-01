@@ -339,3 +339,166 @@ section.list .article {
 .user_panel ul li {
   display: inline-block;
 }
+
+section.nav {
+  height: 200px;
+  border-bottom: 1px solid #43434f;
+  position: relative;
+  text-transform: capitalize;
+}
+
+section.nav nav.catogories {
+  position: absolute;
+  bottom: 26px;
+}
+
+section.nav nav.catogories ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 40px;
+}
+
+section.nav nav.catogories ul li a.weights {
+  border-bottom: 4px solid #ff2d56;
+}
+
+section.nav nav.catogories ul li a.stamina {
+  border-bottom: 4px solid #3c99dc;
+}
+
+section.nav nav.catogories ul li a.sport {
+  border-bottom: 4px solid #31bb7e;
+}
+
+section.nav nav.catogories ul li a {
+  font-size: 28px;
+  color: #fff;
+  padding-bottom: 24px;
+  margin-left: 41px;
+  text-align: center;
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+}
+
+section.nav nav.catogories ul li a:hover {
+  padding-bottom: 0px;
+}
+
+section.nav nav.catogories ul li a.weights:hover {
+  color: #ff2d56;
+}
+
+section.nav nav.catogories ul li a.stamina:hover {
+  color: #3c99dc;
+}
+
+section.nav nav.catogories ul li a.sport:hover {
+  color: #31bb7e;
+}
+
+section.nav nav.main {
+  position: absolute;
+  bottom: 26px;
+  right: -25px;
+}
+
+section.nav nav.main ul {
+  width: 456px;
+}
+
+section.nav nav.main ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 30px;
+}
+
+section.nav nav.main ul li a {
+  color: #fff;
+  -webkit-transition: 0.1s all ease-in-out;
+  transition: 0.1s all ease-in-out;
+}
+
+fieldset {
+  border: none;
+}
+
+.create-post input, .create-post textarea, .create-post select, .create-post button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.create-post textarea {
+  height: 200px;
+}
+
+.create-post select {
+  height: 37px;
+}
+
+.create-post button {
+  padding: 0;
+}
+
+
+footer{
+  background: #d1d1d5;
+  padding-top: 50px;
+  padding-bottom: 250px;
+  margin-top: 20px;
+}
+footer .logo {
+    float: left;
+}
+footer nav.footer {
+    margin-left: 100px;
+}
+footer nav.footer ul li {
+    display: inline;
+}
+footer nav.footer ul li a {
+    margin-right: 30px;
+    color: #141423;
+    text-decoration: underline;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+footer nav.footer p {
+    margin-top: 20px;
+}
+
+
+img {
+    border-style: none;
+}
+
+
+.fourOfour{
+  text-align: center;
+}
+.fourOfour h1{
+  margin-bottom: 0;
+}
+.fourOfour button{
+  width: 50%;
+  margin-top: 20px;
+}
+
+.sub-page{
+  text-align: center;
+}
+.sub-page h1{
+  color: white;
+  margin: 0;
+  padding: 30px;
+
+}
+
+.sub-page .pod{
+  padding: 10px;
+background-color: #fff;
+box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+width: 50%;
+text-align: center;
+margin: 20px auto;
+}
