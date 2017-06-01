@@ -15,8 +15,8 @@ gulp.task('styles', function() {
 //PUG TASK
 gulp.task('markup', function() {
     return gulp.src('src/pug/**/*.pug')
-        .pipe(pug()) // pip to jade plugin
-        .pipe(gulp.dest('././dest')); // tell gulp our output folder
+        .pipe(pug()) 
+        .pipe(gulp.dest('././dest'));
 });
 
 // AUTOPREFIXER TASK
