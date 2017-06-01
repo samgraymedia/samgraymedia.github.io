@@ -36,7 +36,7 @@ gulp.task('autoprefixer', () =>
 gulp.task('serve', ['styles'], function() {
 
     browserSync.init({
-        server: "./"
+        server: "my_portfolio/dest"
     });
 
     gulp.watch('my_portfolio/src/sass/**/*.sass',['styles']);
