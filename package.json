@@ -1,7 +1,7 @@
 {
-  "name": "browser-sync-jekyll",
+  "name": "Basic",
   "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "description": "A starter project including full setup for Pug, GulpJS, SASS & BrowserSync",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
