@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <title>fitnessBlog</title>
+  <link rel="stylesheet" href="css/master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<!-- <body ng-app="fitnessBlog" ng-controller="MainCtrl">
+  <div class="wrap">
+    <div ng-repeat="post in posts | orderBy: '-upvotes'">
+      <a href="{{post.link}}" ng-show="post.link">
+        {{post.title}}
+      </a>
+      <span ng-hide="post.link">
+        {{post.title}}
+      </span> - upvotes: {{post.upvotes}}
+      <button ng-click="incrementUpvotes(post)">+1</button>
+      <button ng-click="incrementDownvotes(post)">-1</button>
+    </div>
+    <form ng-submit="addPost()" class="row text-center">
+      <div class="col col-2">
+        <input class="title" placeholder="title" type="text" ng-model="title">
+      </div>
+      <div class="col col-2">
+        <input class="link" placeholder="link" type="text" ng-model="link">
+      </div>
+      <div class="col col-1 ">
+        <textarea class="body" name="name" placeholder="body" ng-model="body" rows="8" cols="80"></textarea>
+      </div>
+      <div class="col col-1 ">
+        <button class="btn" type="submit" name="button">post</button>
+      </div>
+    </form>
+  </div> -->
+
+<body ng-app="fitnessBlog">
+  <div class="wrap">
+    <div class="row">
+      <ui-view></ui-view>
+    </div>
+
+  </div>
+  <!--home template with all posts-->
+  <script type="text/ng-template" id="/home.html">
+    <div class="wrap">
+      <div ng-repeat="post in posts | orderBy: '-upvotes'">
+        <h2 href="{{post.link}}" ng-show="post.link">
+          {{post.title}}
+        </h2>
+        <h2 ng-hide="post.link">
+          {{post.title}}
+        </h2>
+        <p>{{post.body}}</p>
+        - upvotes: {{post.upvotes}}
+        <button ng-click="incrementUpvotes(post)">+1</button>
+        <button ng-click="incrementDownvotes(post)">-1</button>
+        <span>
+          <div ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+            <span ng-click="incrementUpvotes(comment)"></span> {{comment.upvotes}} - by {{comment.author}}
+        <span>
+            {{comment.body}}
+          </span>
+      </div>
+      <a href="#/posts/{{$index}}">Add a comment</a>
+      </span>
+    </div>
+    <a href="#/create">create a post</a>
+
+
+    <!-- rest of template -->
+  </script>
+  <!--create a post-->
+  <script type="text/ng-template" id="/create.html">
+    <div class="wrap">
+      <form ng-submit="addPost()" class="row text-center">
+        <div class="col col-2">
+          <input class="title" placeholder="title" type="text" ng-model="title">
+        </div>
+        <div class="col col-2">
+          <input class="link" placeholder="link" type="text" ng-model="link">
+        </div>
+        <div class="col col-1 ">
+          <textarea class="body" name="name" placeholder="body" ng-model="body" rows="8" cols="80"></textarea>
+        </div>
+        <div class="col col-1 ">
+          <button class="btn" type="submit" name="button">post</button>
+        </div>
+      </form>
+      <a href="#/home">go home</a>
+
+
+      <!-- rest of template -->
+  </script>
+  <!--post with comments-->
+  <script type="text/ng-template" id="/posts.html">
+    <form ng-submit="addComment()" style="margin-top:30px;">
+      <h3>Add a new comment</h3>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Comment" ng-model="body"></input>
+      </div>
+      <button type="submit" class="btn btn-primary">Post</button>
+      <a href="#/home">go home</a>
+
+    </form>
+  </script>
+</body>
+
+</html>

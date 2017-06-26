@@ -6,7 +6,7 @@
     <nav class="footer" >
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="/about">About</a></li>
         <li data-ng-repeat="item in menu.items | orderBy: 'position'" data-ng-if="item.shouldRender(authentication.user);" ng-switch="item.type" data-ng-class="{ active: $state.includes(item.state), dropdown: item.type === 'dropdown' }" class="{{item.class}}"
           dropdown="item.type === 'dropdown'">
           <a ng-switch-when="dropdown" class="dropdown-toggle" dropdown-toggle role="button">{{::item.title}}&nbsp;<span class="caret"></span></a>
