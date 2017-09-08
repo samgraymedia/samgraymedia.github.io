@@ -63,7 +63,7 @@
 function playSound(e){
   //console logging the Corresponding number for that key
   console.log(e.keyCode);
-  //looking to see if there an audio element with a data-key number the same as the keycode a user has pressed
+  //looking to see if there an audio element with a data-key number the same as the keycode a user has pressed. the ${} is an Template literals which are string literals allowing embedded expressions
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
   //looking to see if there an div with a data-key number the same as the keycode a user has pressed
   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
