@@ -62,12 +62,53 @@
       background:black;
       position: absolute;
       top:50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     }
 
   </style>
-
   <script>
+  const secondHand = document.querySelector('.second-hand');
+  const minuteHand = document.querySelector('.min-hand');
+  const hourHand = document.querySelector('.hour-hand');
+  const hands = document.querySelector('.hand');
+  function setDate() {
+    //stopping the transform reset
+    if (secondsDegrees === 90) {
+      hands.style.transition = "none";
+    } else {
+      hands.style.transition = "all 0.05s";
+    }
+    //getting the date
+    const now = new Date();
+    //getting the seconds
+    const seconds = now.getSeconds();
+    //turning the seconds into degrees, off setting the 90degs that i've set in the css
+    var secondsDegrees = ((seconds / 60) * 360) + 90;
+    console.log(secondsDegrees);
+    //transforming the second hand
+    secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+    //getting the hours
+    const hours = now.getHours();
+    //turning the hours into degrees, off setting the 90degs that i've set in the css
+    const hoursDegrees = ((hours / 60) * 360) + 90;
+    //transforming the hour hand
+    hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+    //getting the minutes
+    const minutes = now.getMinutes();
+    //turning the hours into degrees, off setting the 90degs that i've set in the css
+    const minutesDegrees = ((minutes / 60) * 360) + 90;
+    //transforming the hour hand
+    minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+    
 
+    
+    
+  }
+  //run the setDate function every second
+  setInterval(setDate, 1000);
 
   </script>
 </body>
