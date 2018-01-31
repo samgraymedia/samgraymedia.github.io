@@ -220,8 +220,8 @@ footer {
     width: 103%; }
   footer {
     width: 103%;
-    flex-flow: column;
+    flex-flow: row;
     height: auto;
     align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 20px; } }
+    padding-left: 20px;
+    flex-wrap: wrap; } }
