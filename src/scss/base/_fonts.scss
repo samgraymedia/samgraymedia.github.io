@@ -1,0 +1,320 @@
+// ==========================================================================
+// Typography System
+// ==========================================================================
+
+// Font Families
+$font-primary: "Crimson Text", Georgia, "Times New Roman", serif;
+$font-secondary: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+  "Segoe UI", sans-serif;
+
+// Font Sizes with Line Heights
+$font-sizes: (
+  xs: (
+    size: 0.75rem,
+    line-height: 1.5,
+  ),
+  sm: (
+    size: 0.875rem,
+    line-height: 1.6,
+  ),
+  base: (
+    size: 1rem,
+    line-height: 1.6,
+  ),
+  lg: (
+    size: 1.125rem,
+    line-height: 1.6,
+  ),
+  xl: (
+    size: 1.25rem,
+    line-height: 1.5,
+  ),
+  "2xl": (
+    size: 1.5rem,
+    line-height: 1.4,
+  ),
+  "3xl": (
+    size: 1.875rem,
+    line-height: 1.3,
+  ),
+  "4xl": (
+    size: 2.25rem,
+    line-height: 1.2,
+  ),
+  "5xl": (
+    size: 3rem,
+    line-height: 1.1,
+  ),
+  "6xl": (
+    size: 3.75rem,
+    line-height: 1,
+  ),
+);
+
+// Font Weights
+$font-weights: (
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+);
+
+// Mixins for typography
+@mixin font-size($size) {
+  $font-size: map-get($font-sizes, $size);
+  font-size: map-get($font-size, size);
+  line-height: map-get($font-size, line-height);
+}
+
+@mixin font-family($family: primary) {
+  @if $family == primary {
+    font-family: $font-primary;
+  } @else if $family == secondary {
+    font-family: $font-secondary;
+  }
+}
+
+@mixin font-weight($weight) {
+  font-weight: map-get($font-weights, $weight);
+}
+
+// Typography Classes
+.font-primary {
+  @include font-family(primary);
+}
+
+.font-secondary {
+  @include font-family(secondary);
+}
+
+// Font Size Classes
+@each $size, $values in $font-sizes {
+  .text-#{$size} {
+    @include font-size($size);
+  }
+}
+
+// Font Weight Classes
+@each $weight, $value in $font-weights {
+  .font-#{$weight} {
+    @include font-weight($weight);
+  }
+}
+
+// Heading Styles
+h1,
+.h1 {
+  @include font-size("4xl");
+  @include font-family(primary);
+  @include font-weight(semibold);
+  margin: 0 0 1rem 0;
+
+  @media (min-width: 1024px) {
+    @include font-size("6xl");
+  }
+}
+
+h2,
+.h2 {
+  @include font-size("3xl");
+  @include font-family(primary);
+  @include font-weight(semibold);
+  margin: 0 0 0.75rem 0;
+}
+
+h3,
+.h3 {
+  @include font-size("2xl");
+  @include font-family(primary);
+  @include font-weight(medium);
+  margin: 0 0 0.5rem 0;
+}
+
+h4,
+.h4 {
+  @include font-size("xl");
+  @include font-family(primary);
+  @include font-weight(medium);
+  margin: 0 0 0.5rem 0;
+}
+
+h5,
+.h5 {
+  @include font-size("lg");
+  @include font-family(primary);
+  @include font-weight(medium);
+  margin: 0 0 0.5rem 0;
+}
+
+h6,
+.h6 {
+  @include font-size("base");
+  @include font-family(primary);
+  @include font-weight(medium);
+  margin: 0 0 0.5rem 0;
+}
+
+// Body Text
+p,
+.body-text {
+  @include font-size("base");
+  @include font-family(primary);
+  @include font-weight(normal);
+  margin: 0 0 1rem 0;
+}
+
+// Small Text
+.small-text {
+  @include font-size("sm");
+  @include font-family(secondary);
+  @include font-weight(normal);
+}
+
+// Caption Text
+.caption {
+  @include font-size("xs");
+  @include font-family(secondary);
+  @include font-weight(normal);
+  color: #6b7280;
+}
+
+// Link Styles
+a {
+  @include font-family(primary);
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }
+}
+
+// List Styles
+ul,
+ol {
+  @include font-family(primary);
+  @include font-size("base");
+  margin: 0 0 1rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+// Blockquote
+blockquote {
+  @include font-family(primary);
+  @include font-size("lg");
+  @include font-weight(medium);
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #374151;
+}
+
+// Code
+code {
+  @include font-family(secondary);
+  @include font-size("sm");
+  background-color: #f3f4f6;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  color: #dc2626;
+}
+
+pre {
+  @include font-family(secondary);
+  @include font-size("sm");
+  background-color: #1f2937;
+  color: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+
+  code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+}
+
+// Text Utilities
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+.leading-normal {
+  line-height: 1.5;
+}
+.leading-relaxed {
+  line-height: 1.75;
+}
+.leading-loose {
+  line-height: 2;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.tracking-normal {
+  letter-spacing: 0;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+// Responsive Typography
+@media (max-width: 768px) {
+  h1,
+  .h1 {
+    @include font-size("3xl");
+  }
+
+  h2,
+  .h2 {
+    @include font-size("2xl");
+  }
+
+  h3,
+  .h3 {
+    @include font-size("xl");
+  }
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+  color: #0d4696;
+}

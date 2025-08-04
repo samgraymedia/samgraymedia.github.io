@@ -1,0 +1,107 @@
+.hero {
+  background: linear-gradient(135deg, #fbfaf9 0%, #f2ece3 100%);
+  padding: 4rem 0 6rem;
+  text-align: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__pill {
+    background-color: #d9e8de;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1f2937;
+    @include font-family(secondary);
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    @include font-size("4xl");
+    @include font-family(primary);
+    @include font-weight(semibold);
+    color: #1f2937;
+    margin: 0;
+    line-height: 1.2;
+    max-width: 800px;
+
+    span {
+      color: #2563eb;
+    }
+
+    @media (min-width: 1024px) {
+      @include font-size("6xl");
+    }
+  }
+
+  &__subtitle {
+    @include font-size("lg");
+    @include font-family(secondary);
+    @include font-weight(normal);
+    color: #374151;
+    max-width: 600px;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+    max-width: 800px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  &__stat {
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__stat-number {
+    @include font-size("2xl");
+    @include font-family(primary);
+    @include font-weight(bold);
+    color: #1f2937;
+    margin: 0;
+  }
+
+  &__stat-label {
+    @include font-size("sm");
+    @include font-family(secondary);
+    @include font-weight(medium);
+    color: #6b7280;
+    margin: 0;
+  }
+}

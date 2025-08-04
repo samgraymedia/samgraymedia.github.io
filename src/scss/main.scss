@@ -1,0 +1,12 @@
+// Main SCSS file
+
+// Import base styles
+@import "base/reset";
+@import "base/fonts";
+@import "base/btns";
+
+// Import components
+@import "components/header";
+
+// Import blocks
+@import "blocks/hero";

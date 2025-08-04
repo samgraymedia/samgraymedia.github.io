@@ -1,0 +1,22 @@
+{
+  "name": "freebmd",
+  "version": "1.0.0",
+  "description": "A project with SCSS stack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch src/scss:dist/css --style=expanded",
+    "build": "sass src/scss:dist/css --style=compressed",
+    "clean": "rm -rf dist",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "css"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
