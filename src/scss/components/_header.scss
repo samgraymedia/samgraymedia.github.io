@@ -2,22 +2,40 @@
 .header {
   background-color: #fafafa;
   border-bottom: 1px solid #e5e5e5;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding: 1rem 0;
+  }
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   &__brand {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
+
+    @media (min-width: 768px) {
+      gap: 1rem;
+    }
   }
 
   &__logo {
     flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__title {
@@ -26,24 +44,113 @@
   }
 
   &__main-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #1f2937;
     margin: 0;
     line-height: 1.2;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 
   &__subtitle {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: #6b7280;
     margin: 0;
     line-height: 1.2;
+
+    @media (min-width: 768px) {
+      font-size: 0.875rem;
+    }
+  }
+
+  // Mobile menu button
+  &__menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #374151;
+      transition: all 0.3s ease;
+      margin: 2px 0;
+
+      &:nth-child(1) {
+        transform-origin: 0 0;
+      }
+
+      &:nth-child(3) {
+        transform-origin: 0 100%;
+      }
+    }
+
+    &.is-active {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(1px, -1px);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(1px, 1px);
+        }
+      }
+    }
   }
 
   &__nav {
-    display: flex;
+    display: none;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 2rem;
+    }
+
+    // Mobile menu overlay
+    @media (max-width: 767px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      padding: 5rem 1rem 1rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+
+      &.is-active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 
   &__nav-list {
@@ -51,11 +158,33 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 2rem;
+    gap: 1.5rem;
+
+    @media (min-width: 768px) {
+      gap: 2rem;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 0;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
   }
 
   &__nav-item {
     margin: 0;
+
+    @media (max-width: 767px) {
+      border-bottom: 1px solid #f3f4f6;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
 
   &__nav-link {
@@ -68,6 +197,17 @@
     &:hover {
       color: #1f2937;
     }
+
+    @media (max-width: 767px) {
+      display: block;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      color: #1f2937;
+
+      &:hover {
+        background-color: #f9fafb;
+      }
+    }
   }
 
   &__donate-btn {
@@ -76,11 +216,35 @@
     border-radius: 6px;
     color: #374151;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
     font-size: 0.875rem;
     font-weight: 500;
     transition: all 0.2s ease;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+
+    @media (min-width: 768px) {
+      padding: 0.5rem 1rem;
+    }
+
+    @media (max-width: 767px) {
+      display: block;
+      text-align: center;
+      padding: 1rem 1.5rem;
+      background-color: #2563eb;
+      border-color: #2563eb;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(37, 99, 235, 0.25);
+
+      &:hover {
+        background-color: #1d4ed8;
+        border-color: #1d4ed8;
+        box-shadow: 0 6px 8px rgba(37, 99, 235, 0.3);
+      }
+    }
 
     &:hover {
       background-color: #f3f4f6;
