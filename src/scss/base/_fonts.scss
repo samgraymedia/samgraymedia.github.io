@@ -181,7 +181,7 @@ p,
 }
 
 // Link Styles
-a {
+a:not(.btn):not(.header__nav-link):not(.header__donate-btn):not(.footer__link) {
   @include font-family(primary);
   color: #2563eb;
   text-decoration: none;
