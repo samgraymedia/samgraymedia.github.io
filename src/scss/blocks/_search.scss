@@ -1,0 +1,204 @@
+// Search section styles
+.search-section {
+  background: linear-gradient(135deg, #fbfaf9 0%, #f2ece3 100%);
+  padding: 4rem 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.search-section__header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-section__title {
+  @include font-size("3xl");
+  @include font-family(primary);
+  @include font-weight(semibold);
+  color: #1f2937;
+  margin: 0 0 1rem 0;
+}
+
+.search-section__description {
+  @include font-size("lg");
+  @include font-family(secondary);
+  @include font-weight(normal);
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.6;
+}
+
+// Search form styles
+.search-form {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.search-form__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-form__title {
+  @include font-size("xl");
+  @include font-family(primary);
+  @include font-weight(semibold);
+  color: #1f2937;
+  margin: 0;
+}
+
+.search-form__instruction {
+  @include font-size("sm");
+  @include font-family(secondary);
+  @include font-weight(normal);
+  color: #6b7280;
+  margin: 0 0 2rem 0;
+}
+
+.search-form__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.search-form__row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Form group styles
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &--full {
+    @media (min-width: 768px) {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.form-group__label {
+  @include font-size("sm");
+  @include font-family(secondary);
+  @include font-weight(medium);
+  color: #374151;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  svg {
+    color: #9ca3af;
+    cursor: help;
+  }
+}
+
+.form-group__input,
+.form-group__select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  @include font-size("base");
+  @include font-family(secondary);
+  @include font-weight(normal);
+  color: #1f2937;
+  background-color: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &::placeholder {
+    color: #9ca3af;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+
+  &:hover {
+    border-color: #9ca3af;
+  }
+}
+
+.form-group__select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  appearance: none;
+}
+
+// Button full width variant
+.btn--full {
+  width: 100%;
+  justify-content: center;
+}
+
+// Search info cards
+.search-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.search-info__card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  svg {
+    margin-bottom: 1rem;
+  }
+}
+
+.search-info__title {
+  @include font-size("lg");
+  @include font-family(primary);
+  @include font-weight(semibold);
+  color: #1f2937;
+  margin: 0 0 0.75rem 0;
+}
+
+.search-info__text {
+  @include font-size("sm");
+  @include font-family(secondary);
+  @include font-weight(normal);
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.6;
+}
